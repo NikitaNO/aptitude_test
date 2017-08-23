@@ -30,7 +30,7 @@ export default class TimerContainer extends React.Component {
     render() {
         const eclipse = Math.round(this.state.ms / 1000);
         let minute = eclipse/60;
-        let hour = Math.trunc(eclipse/60);
+        let hour = Math.trunc(minute/60);
         return (
             <View style={styles.container} >
                 <View style={styles.component}>
